@@ -1,9 +1,14 @@
-import Image from "next/image";
+import React from "react";
+import ChatOpener from "@/components/ChatOpener";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="font-bold text-[#128C7E] text-4xl">WhatsApp clone coming in 7 days!</h1>
-    </div>
+      <div className=" flex w-full bg-[#ece5dd] ">
+        <div className="lg:w-[42%] h-screen md:h-full bg-white w-full">
+          <div className=" h-screen">
+           <ChatOpener />
+          </div>
+        </div>
+      </div>
   );
 }
